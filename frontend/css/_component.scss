@@ -23,7 +23,7 @@
     &__paragraph {
         margin-top: 1rem;
         font-size: .9rem;        
-        font-weight: 600;
+        font-weight: 400;
         color: $desaturated-red;
         line-height: 1.5rem;
     }
@@ -34,13 +34,20 @@
 
         input {
             width: 100%;
-            border: 1px solid $dark-grayish-red;            
+            border: 1px solid $desaturated-red;      
+            opacity: .5;      
             background-color: transparent;            
             padding: 1rem 1.5rem;
+            transition: opacity 2s;
 
 
             &::placeholder {
                 color: $desaturated-red;
+            }
+            
+            &:focus {
+                outline: none;
+                opacity: 1;
             }
         }
 
@@ -52,6 +59,12 @@
             height: 100%;
             padding: 1rem;
             background: $btn-color-gradient;
+            box-shadow: 0px 10px 30px $desaturated-red;
+            cursor: pointer;
+
+            &:hover{
+                background: $btn-color-1;
+            }
 
             .icon-arrow {
                 display: inline-block;

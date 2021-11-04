@@ -24,6 +24,11 @@ input, button {
   border-radius: 30px;
 }
 
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 header {
   height: 4rem;
   padding: 1rem 2rem;
@@ -59,7 +64,7 @@ header img {
 .content__paragraph {
   margin-top: 1rem;
   font-size: .9rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #ce9797;
   line-height: 1.5rem;
 }
@@ -71,9 +76,12 @@ header img {
 
 .content form input {
   width: 100%;
-  border: 1px solid #413a3a;
+  border: 1px solid #ce9797;
+  opacity: .5;
   background-color: transparent;
   padding: 1rem 1.5rem;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 .content form input::-webkit-input-placeholder {
@@ -92,6 +100,11 @@ header img {
   color: #ce9797;
 }
 
+.content form input:focus {
+  outline: none;
+  opacity: 1;
+}
+
 .content form button {
   position: absolute;
   top: 0;
@@ -100,6 +113,13 @@ header img {
   height: 100%;
   padding: 1rem;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 35%);
+  -webkit-box-shadow: 0px 10px 30px #ce9797;
+          box-shadow: 0px 10px 30px #ce9797;
+  cursor: pointer;
+}
+
+.content form button:hover {
+  background: #f8bfbf;
 }
 
 .content form button .icon-arrow {
