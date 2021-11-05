@@ -31,7 +31,10 @@
                 and our launch deals.
             </p>
             <form class="content__form" action="POST">
-                <input type="email" name="email" id="email" placeholder="Email Adress">
+                <div class="content__input">
+                    <input type="email" name="email" id="email" placeholder="Email Adress" class="error-active">
+                    <span class="error">Please provide a valid email</span>
+                </div>
                 <button type="submit"><i class="icon-arrow"></i></button>
             </form>
         </main>
