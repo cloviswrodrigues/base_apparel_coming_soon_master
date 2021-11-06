@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/frontend/css/main.css"/>
+
     <link rel="shortcut icon" href="/frontend/assets/favicon-32x32.png" type="image/x-icon">
     <title>Base Apparel Coming Soon Master</title>
 </head>
@@ -30,7 +31,7 @@
                 store. Add your email below to stay up-to-date with announcements 
                 and our launch deals.
             </p>
-            <form class="content__form" action="POST">
+            <form class="content__form" action="POST" id="form">
                 <div class="content__input">
                     <input type="email" name="email" id="email" placeholder="Email Adress" class="error-active">
                     <span class="error">Please provide a valid email</span>
@@ -38,6 +39,7 @@
                 <button type="submit"><i class="icon-arrow"></i></button>
             </form>
         </main>
-    </div>
+    </div>    
+    <script src="/frontend/scripts/scripts.js"></script>
 </body>
 </html>
