@@ -63,10 +63,24 @@
 
         .content__input {
             text-align: left;
-        }   
+        }          
+
+        .content__input-span {
+            opacity: 0;
+            color: $soft-red;
+            font-size: .6rem;
+            font-weight: 600;
+            margin-left: 1.5rem;            
+            transition: all 1s ease-out;
+        }
+
+        .error-active{
+            border: 2px solid red;           
+        }
 
         .error {
-            
+            opacity: 1 !important;
+
             &::before {
                 content: '';
                 position: absolute;
@@ -87,7 +101,7 @@
             opacity: .5;      
             background-color: transparent;            
             padding: 1rem 1.5rem;
-            transition: opacity 2s;
+            transition: all 1s ease-out;
 
 
             &::placeholder {
@@ -97,22 +111,12 @@
             &:focus {
                 outline: none;
                 opacity: 1;
+                background-color: transparent;
             }
 
             @media screen and(min-width: $break-desktop) {
                 padding: .8rem 1.5rem;
             }
-        }
-
-        span {
-            color: $soft-red;
-            font-size: .6rem;
-            font-weight: 600;
-            margin-left: 1.5rem;
-        }
-
-        .error-active{
-            border: 2px solid red;           
         }
 
         button {            
